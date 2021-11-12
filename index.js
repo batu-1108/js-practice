@@ -23,9 +23,10 @@ let score = 0;
 
 const $button = document.getElementsByTagName("button");
 const buttonLength = $button.length;
-document.getElementById("js-question").textContent = Quiz[quizIndex].question;
+
 
 const setupQuiz = () => {
+    document.getElementById("js-question").textContent = Quiz[quizIndex].question;
     let buttonIndex = 0;
 let buttonLength = $button.length;
 while(buttonIndex < buttonLength){
